@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">PIXEL</div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <input type="text" placeholder="Search">
+            <a href="cart.html" class="cart-button">View Cart</a>
+            <!-- Hamburger icon for mobile view -->
+            <span class="hamburger" onclick="openSidebar()">&#9776;</span>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu (for Mobile) -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+        <a href="shop.html">Shop</a>
+        <a href="collections.html">Collections</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart</a>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <h1>Welcome to PIXEL</h1>
+        <p>Your ultimate destination for luxury beauty products.</p>
+        <a href="shop.html" class="shop-now-button">Shop Now</a>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="feature-section">
+        <div class="feature-content">
+            <h2>Unveil Your Beauty</h2>
+            <p>Discover a comprehensive cosmetics shop offering an extensive range of high-quality cosmetic products to enhance your beauty routine. From luxurious skincare essentials to vibrant makeup collections, we cater to all your beauty needs.</p>
+        </div>
+        <div class="feature-slider">
+            <div class="slide">
+                <img src="images/index/F1.png" alt="Product 1">
+            </div>
+            <div class="slide">
+                <img src="images/index/F2.png" alt="Product 2">
+            </div>
+            <div class="slide">
+                <img src="images/index/F3.png" alt="Product 3">
+            </div>
+            <!-- Left and right controls -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Explore Our Categories</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="images/index/Skin.png" alt="Skincare">
+                <h3>Skincare</h3>
+            </div>
+            <div class="category-card">
+                <img src="images/index/Hair.png" alt="Haircare">
+                <h3>Haircare</h3>
+            </div>
+            <div class="category-card">
+                <img src="images/index/Mekup.png" alt="Makeup">
+                <h3>Makeup</h3>
+            </div>
+            <div class="category-card">
+                <img src="images/index/Bath.png" alt="Bath & Body">
+                <h3>Bath & Body</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/index/01.jpg" alt="Product 1">
+                <h3>La Mousse</h3>
+                <p class="brand">Chanel</p>
+                <p class="price">$129.49</p>
+            </div>
+            <div class="product-card">
+                <img src="images/index/02.jpg" alt="Product 2">
+                <h3>Serum De Beaute</h3>
+                <p class="brand">Gucci</p>
+                <p class="price">$79.00</p>
+            </div>
+            <div class="product-card">
+                <img src="images/index/03.jpg" alt="Product 3">
+                <h3>Powermatte Lipstick</h3>
+                <p class="brand">NARS</p>
+                <p class="price">$50.00</p>
+            </div>
+            <div class="product-card">
+                <img src="images/index/04.jpg" alt="Product 4">
+                <h3>Weightless Foundation</h3>
+                <p class="brand">Bobbi Brown</p>
+                <p class="price">$99.99</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- About Section -->
+        <div class="footer-about">
+            <h3>About PIXEL</h3>
+            <p>PIXEL is your ultimate destination for luxury beauty products. Explore our collections of skincare, makeup, and more, all curated to bring out the beauty within.</p>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Email: Pixelsolutions@gmail.com</li>
+                <li>Phone: +94 77 612 3367</li>
+                <li>Address: 347/6 </li>
+            </ul>
+        </div>
+
+        <!-- Store Information Section with Menu Links -->
+        <div class="footer-store">
+            <h3>Store Information</h3>
+            <ul>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 PIXEL. All rights reserved.</p>
+    </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
